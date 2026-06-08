@@ -1,0 +1,28 @@
+.search {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #2e374a;
+  padding: 5px;
+}
+.input {
+  background-color: transparent;
+  color: var(--text);
+  border: none;
+  padding: 5px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.button {
+  padding: 10px;
+  background-color: #5d57c9;
+  color: var(--text);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

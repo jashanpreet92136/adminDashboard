@@ -1,0 +1,36 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-weight: bold;
+  color: var(--textSoft);
+  text-transform: capitalize;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #2e374a;
+  padding: 10px;
+}
+.input {
+  background-color: transparent;
+  color: var(--text);
+  border: none;
+}
+.icons {
+  display: flex;
+  gap: 2px;
+}

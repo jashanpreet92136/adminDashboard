@@ -1,0 +1,62 @@
+.title {
+  margin-bottom: 17px;
+  font-weight: 200;
+  color: var(--textSoft);
+}
+.container {
+  background: linear-gradient(to right, #182237, #253352);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  height: 300px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* chart area */
+.chartWrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+
+/* center text */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.amount {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.label {
+  margin-bottom: 17px;
+  font-weight: 200;
+  color: var(--textSoft);
+}
+
+/* legend */
+.legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}

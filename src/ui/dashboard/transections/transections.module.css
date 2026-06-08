@@ -1,0 +1,85 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+}
+.title {
+  margin-bottom: 17px;
+  font-weight: 200;
+  color: var(--textSoft);
+}
+.head {
+  font-weight: 300;
+  color: var(--textSoft);
+  font-size: 20px;
+}
+
+.table {
+  width: 100%;
+}
+.table td {
+  padding: 8px;
+  font-weight: 300;
+}
+.img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.status {
+  border-radius: 5px;
+  padding: 5px;
+
+  font-size: 15px;
+  color: white;
+}
+.pending {
+  background: #f7cb7375;
+}
+.success {
+  background: rgb(75, 176, 75);
+}
+.failed {
+  background: rgb(176, 90, 90);
+}
+.refunded {
+  background: rgb(92, 145, 165);
+}
+.done {
+  background: #afd6ee75;
+}
+.cancelled {
+  background: #f7737375;
+}
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  margin-top: 20px;
+}
+.leftSec {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightSec {
+  flex: 1;
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+}
+.tcard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topSec {
+  position: fixed;
+}

@@ -1,0 +1,42 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.form {
+  padding: 50px;
+  background-color: var(--bgSoft);
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form input {
+  padding: 20px;
+  margin-bottom: 35px;
+  background-color: transparent;
+  border: none;
+  color: var(--text);
+  border-radius: 5px;
+  background-color: var(--bg);
+}
+
+.h1 {
+  text-align: center;
+  color: var(--textSoft);
+  margin-bottom: 25px;
+}
+
+.submit {
+  padding: 20px;
+  background-color: teal;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
