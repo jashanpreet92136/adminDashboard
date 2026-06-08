@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextAdmin Dashboard (Learning Project)
 
-## Getting Started
+This is a **Next.js admin dashboard project** created purely for learning purposes.
 
-First, run the development server:
+The main goal of this project was to understand:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js App Router
+- Server Actions
+- Authentication flow using NextAuth
+- MongoDB integration
+- Middleware protection
+- Session handling (JWT vs Session)
+- Protected routes (dashboard access control)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Purpose of this Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is NOT focused on production deployment or responsive UI.
 
-## Learn More
+It was built to deeply understand how authentication and server-side logic works in Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔐 Authentication Flow (What I Learned)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- User submits login form
+- `useActionState` triggers `authenticate` server action
+- `signIn("credentials")` is called
+- NextAuth `authorize()` function runs
+- Database is checked for user
+- Password is compared using bcrypt
+- If valid → JWT/session is created
+- User is redirected to `/dashboard`
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧠 Key Concepts Implemented
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Server Actions (`app/lib/actions.js`)
+- Credentials Provider (NextAuth)
+- bcrypt password hashing
+- MongoDB + Mongoose
+- Middleware route protection
+- JWT + Session callbacks
+- Redirect handling after login
+
+---
+
+## 📸 Screenshots
+
+### 🔑 Login Page
+![Login Page](./screenshots/login.png)
+
+---
+
+### 📊 Dashboard
+![Dashboard View 1](./screenshots/dash1.png)
+
+![Dashboard View 2](./screenshots/dash2.png)
+
+---
+
+### 👤 Users Page
+![Users Page](./screenshots/users.png)
+
+---
+
+### 📦 Products Page
+![Products Page](./screenshots/products.png)
+
+---
+
+### 💰 Transactions Page
+![Transactions View 1](./screenshots/trans1.png)
+
+![Transactions View 2](./screenshots/trans2.png)
+
+---
+
+### 📈 Reports Page
+![Reports Page](./screenshots/repo.png)
+
+---
+
+### 📊 Revenue Page
+![Revenue View 1](./screenshots/rev1.png)
+
+![Revenue View 2](./screenshots/rev2.png)
+
+---
+
+### 👥 Teams Page
+![Teams Page](./screenshots/teams.png)
+
+---
+
+## 🗂 Project Structure
